@@ -16,8 +16,8 @@ composer install
 
 ## License
 
-Copyright © 2022 Kenry Nainggolan
-VKAdmin is an open source and licensed under **[MIT](http://opensource.org/licenses/MIT)**
+- Copyright © 2022 Kenry Nainggolan
+- VKAdmin is an open source and licensed under **[MIT](http://opensource.org/licenses/MIT)**
 
 -------------------
 ### Cheers Up!
