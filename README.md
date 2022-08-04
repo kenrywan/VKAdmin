@@ -12,6 +12,9 @@ VKAdmin - Free Admin Control Panel Themes Based on Bootstrap 5
 git clone https://github.com/kenrywan/VKAdmin.git
 cd VKAdmin
 composer install
+cd vendor\nnnick\chartjs
+npm install
+npm run build
 ```
 
 ## License
