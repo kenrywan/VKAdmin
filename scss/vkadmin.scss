@@ -3,15 +3,11 @@
     src: url(../font/Nunito-Regular.ttf);
     src: url(../font/Nunito-Regular.ttf) format('ttf'), url(../font/Nunito-Regular.ttf) format('truetype');
 }
-body {
-    position: relative;
-    min-height: 100%;
-    font-family: Nunito
-}
-#wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
 
+@import "variables.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "global.scss";
 @import "sidebar.scss";
+@import "sidebar-light.scss";

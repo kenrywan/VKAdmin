@@ -1,0 +1,10 @@
+// Typography
+$font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$body-color: #757575;
+$body-text-align: "left";
+
+:root {
+    --bs-font-sans-serif:$font-family-sans-serif
+    --bs-body-color:$body-color
+    --bs-body-text-align:$body-text-align
+}

@@ -3,3 +3,4 @@
 *.sass.map
 *.scss.map
 /vendor
+/node_modules
