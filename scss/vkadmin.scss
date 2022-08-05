@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../font/Nunito-Regular.ttf);
+    src: url(../font/Nunito-Regular.ttf) format('ttf'), url(../font/Nunito-Regular.ttf) format('truetype');
+}
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: Nunito
+}
+#wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@import "sidebar.scss";
