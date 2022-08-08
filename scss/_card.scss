@@ -1,0 +1,51 @@
+.card {
+	.card-header {
+		.dropdown {
+			line-height: 1;
+			.dropdown-menu {
+				line-height: 1.5;
+			}
+		}
+	}
+	.card-header[data-toggle=collapse] {
+		text-decoration: none;
+		position: relative;
+		padding: .75rem 3.25rem .75rem 1.25rem;
+		&::after {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-right: 1.725rem;
+			line-height: 51px;
+			font-weight: 900;
+			content: '\f107';
+			font-family: 'Font Awesome 5 Free';
+		}
+	}
+	.card-header[data-toggle=collapse].collapsed {
+		border-radius: .35rem;
+		&::after {
+			content: '\f105';
+		}
+	}
+	.table {
+		margin-bottom: 0;
+		td {
+			padding-right: 1.5rem;
+			padding-left: 1.5rem;
+		}
+		th {
+			padding-right: 1.5rem;
+			padding-left: 1.5rem;
+		}
+	}
+	.text-xs {
+		font-size: 0.7rem !important;
+	}
+	.text-gray-800 {
+		color: #5a5c69!important;
+	}
+	
+	-webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+}

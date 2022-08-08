@@ -16,5 +16,17 @@ a {
 }
 
 #wrapper {
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	#content-wrapper {
+		background-color: #fafdfb;
+		width: 100%;
+		overflow-x: hidden;
+		#content {
+			-webkit-box-flex: 1;
+			-ms-flex: 1 0 auto;
+			flex: 1 0 auto;
+		}
+	}
 }
