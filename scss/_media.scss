@@ -1,0 +1,216 @@
+
+@media (min-width:576px) {
+	.topbar {
+		.dropdown {
+			position: relative;
+			.dropdown-menu {
+				width: auto;
+				right: 0;
+			}
+		}
+		.dropdown-list {
+			width: 20rem !important;
+			.dropdown-item {
+				.text-truncate {
+					max-width: 13.375rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width:768px) {
+	#container-wrapper {
+		min-width: 100vw;
+	}
+	.sidebar.toggled {
+		width: 100vw !important;
+		transition: all .3s ease-in-out;
+		-webkit-transition: all .3s ease-in-out;
+		.nav-item {
+			margin-left: -1rem;
+			position: relative;
+			margin-bottom: -15px;
+			.nav-link {
+				display: block;
+				width: 100%;
+				text-align: left;
+				padding: 1rem;
+				width: 14rem;
+				i {
+					font-size: .85rem;
+					margin-top: .4rem;
+					margin-right: .5rem;
+				}
+				span {
+					font-size: .85rem;
+					display: inline;
+				}
+			}
+			.nav-link[data-toggle=collapse] {
+				&::after {
+					width: 1rem;
+					text-align: center;
+					float: right;
+					vertical-align: 0;
+					border: 0;
+					font-weight: 900;
+					content: '\f107';
+					font-family: 'Font Awesome 5 Free';
+				}
+			}
+			.nav-link[data-toggle=collapse].collapsed {
+				&::after {
+					content: '\f105';
+				}
+			}
+			.collapse {
+				position: relative;
+				padding-left: 1rem;
+				left: 0;
+				z-index: 1;
+				top: 0;
+				-webkit-transition: height .15s ease;
+				transition: height .15s ease;
+				margin: 0 1rem;
+				.collapse-inner {
+					border-radius: .35rem;
+					-webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
+					box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
+					padding: .5rem 0;
+					min-width: 10rem;
+					font-size: .85rem;
+					margin: 0 0 1rem 0;
+					.collapse-header {
+						margin: 0;
+						white-space: nowrap;
+						padding: .5rem 1.5rem;
+						text-transform: uppercase;
+						font-weight: 800;
+						font-size: .65rem;
+						color: #b7b9cc;
+					}
+					.collapse-item {
+						padding: .5rem 1rem;
+						margin: 0 .5rem;
+						display: block;
+						color: #3a3b45;
+						text-decoration: none;
+						border-radius: .35rem;
+						white-space: nowrap;
+						&:hover {
+							background-color: #eaecf4;
+							transition: all .3s ease-in-out;
+							-webkit-transition: all .3s ease-in-out;
+						}
+						&:active {
+							background-color: #dddfeb;
+						}
+					}
+					.collapse-item.active {
+						color: #3f51b5;
+						font-weight: 800;
+					}
+				}
+			}
+			.collapsing {
+				margin: 0 1rem;
+				.collapse-inner {
+					padding: .5rem 0;
+					min-width: 10rem;
+					font-size: .85rem;
+					margin: 0 0 1rem 0;
+					.collapse-header {
+						margin: 0;
+						white-space: nowrap;
+						padding: .5rem 1.5rem;
+						text-transform: uppercase;
+						font-weight: 800;
+						font-size: .65rem;
+						color: #b7b9cc;
+					}
+					.collapse-item {
+						padding: .5rem 1rem;
+						margin: 0 .5rem;
+						display: block;
+						color: #3a3b45;
+						text-decoration: none;
+						border-radius: .35rem;
+						white-space: nowrap;
+						&:hover {
+							background-color: #eaecf4;
+							transition: all .3s ease-in-out;
+							-webkit-transition: all .3s ease-in-out;
+						}
+						&:active {
+							background-color: #dddfeb;
+						}
+					}
+					.collapse-item.active {
+						color: #3f51b5;
+						font-weight: 800;
+					}
+				}
+			}
+		}
+		.nav-item.active {
+			.nav-link {
+				font-weight: 700;
+			}
+		}
+		.sidebar-brand {
+			height: 4.375rem;
+			text-decoration: none;
+			font-size: 1rem;
+			font-weight: 800;
+			padding: 1.5rem 1rem;
+			text-align: center;
+			letter-spacing: .05rem;
+			z-index: 1;
+			.sidebar-brand-text {
+				display: inline;
+			}
+		}
+		hr.sidebar-divider {
+			margin: 1rem 0 1rem 0;
+		}
+		.sidebar-heading {
+			display: block;
+			text-align: left;
+			padding: 0 1rem;
+			font-weight: 800;
+			font-size: .65rem;
+			letter-spacing: .13rem;
+		}
+	}
+	.sidebar {
+		width: 0 !important;
+		overflow: hidden;
+		transition: all .3s ease;
+		-webkit-transition: all .3s ease;
+		.sidebar-brand {
+			overflow: hidden;
+			.sidebar-brand-text {
+				overflow: hidden;
+			}
+			.sidebar-brand-icon {
+				img {
+					overflow: hidden;
+				}
+			}
+		}
+		.nav-item {
+			overflow: hidden;
+		}
+		hr.sidebar-divider {
+			margin: 1rem 0 1rem 0;
+		}
+	}
+	.topbar {
+		.navbar-search {
+			width: 100%;
+		}
+	}
+	.login-form {
+		padding: 3rem 2rem !important;
+	}
+}
